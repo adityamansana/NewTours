@@ -113,7 +113,7 @@ public class TestClass1 {
  		
  		Integer tax= Integer.parseInt(TrimText(driver.findElement(By.xpath("//font[contains(text(),'Taxes')]/parent::*/following-sibling::*/font")).getText()));
  		
- 		System.out.println(tax);
+ 		System.out.println("Tax is: "+tax);
  		
  		Integer TotalPrice = p+q+tax;
  		
@@ -132,17 +132,18 @@ public class TestClass1 {
  		{
  			System.out.println("Price do not Matched.");
  		}
- 		
+
  		driver.findElement(By.xpath("//input[@name='buyFlights']")).click();
  		
- 		Integer PNR = Integer.parseInt(TrimText(driver.findElement(By.xpath("//font[contains(text(),'Confirmation')]")).getText()));
- 		
- 		
+// 		Integer PNR = Integer.parseInt(TrimText(driver.findElement(By.xpath("//font[contains(text(),'Confirmation')]")).getText()));
  		
 		//--------------getText--------------//
+ 		
 		if(driver.findElement(By.xpath("//font[contains(text(),'Your')]")).getText().equals("Your itinerary has been booked!"))
 		{
-			System.out.println("Flight successfully booked. Your PNR is: " +PNR);
+
+			System.out.println("Flight successfully booked. Your PNR is: " +(TrimText(driver.findElement(By.xpath("//font[contains(text(),'Confirmation')]")).getText())));
+		
 		}
 		
 		else
@@ -150,13 +151,7 @@ public class TestClass1 {
 			System.out.println("Flight booking failed!");
 		}
 		
-		
-
 	}
-
-		   
-
-		   
 
 		   public static String TrimText(String args){
 
@@ -170,10 +165,10 @@ public class TestClass1 {
 
 		        Character character = something.charAt(i);
 
-		        if (Character.isDigit(character)) {
+		        if (Character.isDigit(character) ) {
 
 		            result += character;
-
+		    
 		        }
 
 		    }
