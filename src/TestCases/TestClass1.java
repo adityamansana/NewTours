@@ -23,7 +23,7 @@ public class TestClass1 {
 
 		String inboundflightPriceLocator ="//input[@name='inFlight']/parent::*/parent::*/following-sibling::tr/td[@class='data_verb_xcols']/child::font/font/b";
 
-		System.setProperty("webdriver.chrome.driver", "C:\\Selenium Softwares\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium Training\\chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
 
