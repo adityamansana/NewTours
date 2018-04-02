@@ -14,5 +14,8 @@
 	<classpathentry kind="lib" path="E:/Softwares/0 New Softwares/Selenium Softwares/selenium-java-3.10.0/libs/httpcore-4.4.6.jar"/>
 	<classpathentry kind="lib" path="E:/Softwares/0 New Softwares/Selenium Softwares/selenium-java-3.10.0/libs/okhttp-3.9.1.jar"/>
 	<classpathentry kind="lib" path="E:/Softwares/0 New Softwares/Selenium Softwares/selenium-java-3.10.0/libs/okio-1.13.0.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium Training/htmlunit-driver-2.30.0.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium Training/selenium-server-standalone-3.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium Softwares/sikulixapi.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

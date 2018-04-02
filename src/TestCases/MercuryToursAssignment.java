@@ -11,7 +11,7 @@ public class MercuryToursAssignment {
 	public static void main(String[] args) throws InterruptedException {
 
 		MercuryTours mt = new MercuryTours();
-		System.setProperty("webdriver.chrome.driver", "C:\\\\Selenium Softwares\\\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium Training\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://newtours.demoaut.com");
 		CommonClassForComboBox scmb = new CommonClassForComboBox();
