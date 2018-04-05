@@ -43,6 +43,7 @@ public class AmazonAssignment {
 			
 			}*/
 			WebElement e;
+			//iterateTill will get the number of search results pages
 			int iterateTill = Integer.parseInt(driver.findElement(By.xpath("//span[@class='pagnDisabled']")).getText());
 			System.out.println("Total number of search result pages are: " +iterateTill);
 			try{
@@ -50,12 +51,13 @@ public class AmazonAssignment {
 			{
 				/*if((driver.findElement(By.xpath("//span[@class='pagnRA1']")).isDisplayed()))
 				{*/
-			e = driver.findElement(By.id("s-results-list-atf"));
+			e = driver.findElement(By.xpath("//ul[@id='s-results-list-atf']"));
 			List<WebElement>rows = e.findElements(By.xpath("//li[@class='s-result-item celwidget  ']")); 
 			System.out.println("For loop - Number of Rows "+rows.size());
 			for (WebElement row : rows)
 			{
 				List<WebElement>Title = row.findElements(By.tagName("h2"));
+				//List<WebElement>t = rows.forEach();
 				System.out.println("FOr each loop - Title Size = " +Title.size());
 				System.out.println("Title = " +Title);
 				//System.out.println(row.getAttribute("class"));
